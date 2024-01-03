@@ -23,7 +23,7 @@ echo -e "${BLUE}${BOLD} ---> Done <--- ${NORMAL}${NC}"
 echo -e "${RED}############################################################################################################${NC}"
 
 echo -e "${GREEN}${BOLD} ---> Install Apache2 Service <--- ${NORMAL}${NC}"
-sudo apt-get install apache2 -y
+sudo apt-get install apache2 figlet -y
 echo -e "${BLUE}${BOLD} ---> Done <--- ${NORMAL}${NC}"
 
 echo -e "${RED}#############################################################################################################${NC}"
@@ -331,11 +331,12 @@ else
 fi
 
 sudo systemctl restart apache2.service
-echo -e "${GREEN}${BOLD}The script created by Klayytech${NORMAL}${NC}"
-
-echo -e "${RED}###############################################################################################################${NC}"
-
+sudo apt-get update -y
 if ! command -v figlet &> /dev/null; then
     (sudo apt-get install figlet -y > /dev/null) &
 fi
+
+echo -e "${RED}###############################################################################################################${NC}"
+
+echo -e "${GREEN}${BOLD}The script created by Mahmoud Gamal${NORMAL}${NC}"
 figlet "KlayyTech"
