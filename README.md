@@ -1,22 +1,27 @@
-1. This script automates the installation process for Apache2, PHP, MySQL, and WordPress on Ubuntu or Debian distribution.
-2. It simplifies the setup of a web server environment for hosting WordPress websites.
-3. The script installs Apache2 as the web server, PHP as the server-side scripting language, and MySQL as the database management system.
-4. It provides options to choose between HTTP or HTTPS configuration for the web server.
-5. The script supports multiple versions of PHP, allowing you to select the desired PHP version during installation.
-6. The script installs WordPress, the popular content management system, and sets up the necessary configuration files.
-7. It generates a secure MySQL database and user for WordPress.
-8. The script guides you through the installation process, prompting for necessary information such as website name, admin username, and password.
-9. Once installed, the script provides instructions on how to access and manage your WordPress website.
-######################################################################################################################
+## LAMP Script:
+* This script automates the installation process for Apache2, PHP, MySQL, and WordPress on Ubuntu or Debian distribution.
+* It simplifies the setup of a web server environment for hosting WordPress websites.
+* The script installs Apache2 as the web server, PHP as the server-side scripting language, and MySQL as the database management system.
+* It provides options to choose between HTTP or HTTPS configuration for the web server.
+* The script supports multiple versions of PHP, allowing you to select the desired PHP version during installation.
+* The script installs WordPress, the popular content management system, and sets up the necessary configuration files.
+* It generates a secure MySQL database and user for WordPress.
+* The script guides you through the installation process, prompting for necessary information such as website name, admin username, and password.
+* Once installed, the script provides instructions on how to access and manage your WordPress website.
 
-If you Need Pass Values of Variables you can pass them when you running Script by using Predefined Variables.
-Predefined Variables are variables known to the shell and their values are assigned by the shell.
-$#  --->  Number of arguments
-$*  --->  List of all arguments
-$0  --->  Script Name
-$1, $2, ...  --->  First argument, second argument, ...
+***
+# Predefined Variables:
+* If you Need Pass Values of Variables you can pass them when you running Script by using Predefined Variables.
+* Predefined Variables are variables known to the shell and their values are assigned by the shell.
+* $#  --->  Number of arguments
+* $*  --->  List of all arguments
+* $0  --->  Script Name
+* $1, $2, ...  --->  First argument, second argument, ...
 
-################
+***
+
+# Function of all Predefined Variables:
+
 $1 = (variable num) for choose PHP Version
 #######################################################
 
@@ -52,52 +57,28 @@ $20 = (variable certurl) URL for Certificate
 $21 = (variable privatekey) URL for PrivateKey
 $22 = (variable mail) Email address for create ssl certificate
 
-###############################################################################################################################
+***
 
-#In first section
+# In first section:
+* Setting the color and Bold Font variables.
 
-1) Setting the color and Bold Font variables.
+# In second section:
+* Make update and upgrade packages.
+* Install Apache2 and PHP.
+* In PHP There's more than version.
 
-##############################################################################################
+# In third section:
+* Creating WordPress database and User for manage this database.
+* After create DB & user can choose if you need download MySQL-server Version 8.0 or you have a Remotely Server.
+* A WordPress database stores all the data that makes up a WordPress website, including login credentials, pages, posts, themes, and plugins.
 
-#In second section
+# In forth section:
+* Download and extract latest WordPress Package.
+* Create WP-config file and set database credentials.
 
-1) Make update and upgrade packages.
-
-2) Install Apache2 and PHP.
-
-3) In PHP There's more than version.
-
-##############################################################################################
-
-#In third section
-
-1) Creating WordPress database and User for manage this database.
-
-2) After create DB & user can choose if you need download MySQL-server Version 8.0 or you have a Remotely Server
-
-3) A WordPress database stores all the data that makes up a WordPress website,
-including login credentials, pages, posts, themes, and plugins.
-
-##############################################################################################
-
-#In forth section
-
-1) Download and extract latest WordPress Package.
-
-2) Create WP-config file and set database credentials.
-
-##############################################################################################
-
-#In fifth section
-
-1) Make configuration of Apache2 and choise any protocol you need your Website it will run on.
-
-2) When choise HTTP protocol You'll only enter VirtualHost (configuration file of your WebSite)
-and ServerName (Web address of your WebSite). and The Script will complete the rest.
-
-3) When choise HTTPS protocol You'll enter VirtualHost & ServerName, too. but here you choise the way of enter Certificate.
+# In fifth section:
+* Make configuration of Apache2 and choise any protocol you need your Website it will run on.
+* When choise HTTP protocol You'll only enter VirtualHost (configuration file of your WebSite) and ServerName (Web address of your WebSite). and The Script will complete the rest.
+* When choise HTTPS protocol You'll enter VirtualHost & ServerName, too. but here you choise the way of enter Certificate.
 in first option you have a certifcate here you must enter the location of certificate whether it locally or on the Internet.
 in second option the script will be generate let's Encrypt certificate.
-
-##############################################################################################
