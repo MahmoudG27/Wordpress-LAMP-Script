@@ -22,40 +22,39 @@
 
 # Function of all Predefined Variables:
 
-$1 = (variable num) for choose PHP Version
+* $1 = (variable num) for choose PHP Version
 #######################################################
 
-$2 = (variable dbname) for MySQL DB will be created
-$3 = (variable userdb) for MySQL DB user will be created
-$4 = (variable passworduser) for Password of user MySQL DB will be created
-$5 = (variable num1) --> (1) for choose install MySQL
-
-$5 = (variable num1) --> (2) for choose use remotly MySQL server
-$6 = (variable ipDBMS) for IP remotly MySQL server
-$7 = (variable userDBMS) for admin user remotly MySQL server
-$8 = (variable passwduserDBMS) for Password admin user remotly MySQL server
+* $2 = (variable dbname) for MySQL DB will be created
+* $3 = (variable userdb) for MySQL DB user will be created
+* $4 = (variable passworduser) for Password of user MySQL DB will be created
+* $5 = (variable num1) --> (1) for choose install MySQL
+* $5 = (variable num1) --> (2) for choose use remotly MySQL server
+* $6 = (variable ipDBMS) for IP remotly MySQL server
+* $7 = (variable userDBMS) for admin user remotly MySQL server
+* $8 = (variable passwduserDBMS) for Password admin user remotly MySQL server
 #######################################################
 
-$9 = (variable install_dir) for choose location install wordpress in it
+* $9 = (variable install_dir) for choose location install wordpress in it
 #######################################################
 
-$10 = (variable protocol) for choose HTTP or HTTPS
+* $10 = (variable protocol) for choose HTTP or HTTPS
 #On HTTP
-$11 = (variable virtualhost) for configuration file of your WebSite
-$12 = (variable servername) for Web address of your WebSite
+* $11 = (variable virtualhost) for configuration file of your WebSite
+* $12 = (variable servername) for Web address of your WebSite
 ###############
 #On HTTPS
-$13 = (variable virtualhost_ssl) for configuration file of your WebSite
-$14 = (variable servername_ssl) for Web address of your WebSite
-$15 = (variable num2) --> (1) if you have a certificate HTTPS
-$15 = (variable num2) --> (2) if you need create a Lets encrypt certificate
-$16 = (variable certificate) for choose you have certificate locally or remotly
-$17 = (variable certlocal) for Path for your Certificate
-$18 = (variable privatekeylocal) for Enter Path for your privatekey
-$19 = (variable ssl_location) path for download certificate in it
-$20 = (variable certurl) URL for Certificate
-$21 = (variable privatekey) URL for PrivateKey
-$22 = (variable mail) Email address for create ssl certificate
+* $13 = (variable virtualhost_ssl) for configuration file of your WebSite
+* $14 = (variable servername_ssl) for Web address of your WebSite
+* $15 = (variable num2) --> (1) if you have a certificate HTTPS
+* $15 = (variable num2) --> (2) if you need create a Lets encrypt certificate
+* $16 = (variable certificate) for choose you have certificate locally or remotly
+* $17 = (variable certlocal) for Path for your Certificate
+* $18 = (variable privatekeylocal) for Enter Path for your privatekey
+* $19 = (variable ssl_location) path for download certificate in it
+* $20 = (variable certurl) URL for Certificate
+* $21 = (variable privatekey) URL for PrivateKey
+* $22 = (variable mail) Email address for create ssl certificate
 
 ***
 
