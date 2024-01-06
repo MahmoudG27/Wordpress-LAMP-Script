@@ -339,4 +339,4 @@ fi
 echo -e "${RED}###############################################################################################################${NC}"
 
 echo -e "${GREEN}${BOLD}The script created by Mahmoud Gamal${NORMAL}${NC}"
-figlet "KlayyTech"
+printf "Klayytech\nFor\nDigital\nTransformation\n" | figlet
