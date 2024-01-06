@@ -37,11 +37,11 @@
 
 * $10 = (variable protocol) for choose HTTP or HTTPS
 
-# On HTTP
+##### On HTTP
 * $11 = (variable virtualhost) for configuration file of your WebSite
 * $12 = (variable servername) for Web address of your WebSite
 
-# On HTTPS
+##### On HTTPS
 * $13 = (variable virtualhost_ssl) for configuration file of your WebSite
 * $14 = (variable servername_ssl) for Web address of your WebSite
 * $15 = (variable num2) --> (1) if you have a certificate HTTPS
@@ -77,5 +77,5 @@
 * Make configuration of Apache2 and choise any protocol you need your Website it will run on.
 * When choise HTTP protocol You'll only enter VirtualHost (configuration file of your WebSite) and ServerName (Web address of your WebSite). and The Script will complete the rest.
 * When choise HTTPS protocol You'll enter VirtualHost & ServerName, too. but here you choise the way of enter Certificate.
-in first option you have a certifcate here you must enter the location of certificate whether it locally or on the Internet.
-in second option the script will be generate let's Encrypt certificate.
+In first option you have a certifcate here you must enter the location of certificate whether it locally or on the Internet.
+In second option the script will be generate let's Encrypt certificate.
