@@ -23,7 +23,6 @@
 # Function of all Predefined Variables:
 
 * $1 = (variable num) for choose PHP Version
-#######################################################
 
 * $2 = (variable dbname) for MySQL DB will be created
 * $3 = (variable userdb) for MySQL DB user will be created
@@ -33,17 +32,16 @@
 * $6 = (variable ipDBMS) for IP remotly MySQL server
 * $7 = (variable userDBMS) for admin user remotly MySQL server
 * $8 = (variable passwduserDBMS) for Password admin user remotly MySQL server
-#######################################################
 
 * $9 = (variable install_dir) for choose location install wordpress in it
-#######################################################
 
 * $10 = (variable protocol) for choose HTTP or HTTPS
-#On HTTP
+
+# On HTTP
 * $11 = (variable virtualhost) for configuration file of your WebSite
 * $12 = (variable servername) for Web address of your WebSite
-###############
-#On HTTPS
+
+# On HTTPS
 * $13 = (variable virtualhost_ssl) for configuration file of your WebSite
 * $14 = (variable servername_ssl) for Web address of your WebSite
 * $15 = (variable num2) --> (1) if you have a certificate HTTPS
